@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
+    min-width: 60vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-btn {
+    margin-top: 1rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-item {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-item > li {
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-bottom: 1px solid grey;
+}
+
+.search-box > input {
+    border: none;
+}
+
+.ProductAll {
+    display: flex;
+}
+
+.productCard {
+    width: 20rem;
+}
+
+.productCard > img {
+    width:100%;
+    min-width: 50%;
 }
